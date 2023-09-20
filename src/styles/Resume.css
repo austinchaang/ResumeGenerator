@@ -65,3 +65,18 @@ button {
     background-color: var(--section-resume-bg);
     color: var(--resume-accent);
 }
+
+@media(max-width:1340px) {
+    .resume-container {
+        flex-direction: column;
+        gap: 2rem;
+        position: static;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:830px) {
+    .resume-container {
+        overflow: auto;
+    }
+}

@@ -1,9 +1,11 @@
-import "../styles/index.css";
 
 export default function Header() {
     return (
-        <header id="header">
-            <h1>Resume Generator</h1>
-        </header>
+        <nav className="navbar navbar-expand-lg navbar-dark">
+            <div className="container-fluid">
+                <h1 className="display-3 text-black mx-auto">Resume Generator</h1>
+            </div>
+
+        </nav>
     );
 }

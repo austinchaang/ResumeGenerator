@@ -2,12 +2,12 @@ import uniqid from "uniqid";
 
 const exampleData = {
     personalInfo: {
-        fullName: "Darren Campbell",
-        title: "Manager",
-        email: "darren.campbell@gmail.com",
+        fullName: "Bill Campbell",
+        title: "Software Engineer",
+        email: "bill.campbell@gmail.com",
         phoneNumber: "+1 778 543 1234",
         address: "Burnaby, BC",
-        url: "dcampbell.com"
+        url: "bcampbell.com"
     },
     sections: {
         experiences: [
@@ -29,7 +29,7 @@ const exampleData = {
                 location: "Vancouver, Canada",
                 startDate: "09/19",
                 endDate: "05/20",
-                description: "Created a full-stack application",
+                description: "Worked with product managers to re-architect a multi-page web app into a single page web-app, boosting yearly revenue by $1.4M",
                 isCollapsed: true,
                 isHidden: false,
                 id: uniqid(),

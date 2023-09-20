@@ -4,10 +4,10 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import ExperienceInfoSection from "./experience/ExperienceInfoSection";
 import EducationInfoSection from "./education/EducationInfoSection";
 
-function Resume({ personalInfo, sections, layout }) {
+function Resume({ personalInfo, sections, layout, reference }) {
     return (
         <div className="resume-container">
-            <div className={`resume ${layout}`}>
+            <div className={`resume ${layout}`} ref={reference}>
                 <PersonalInfoSection
                     fullName={personalInfo.fullName}
                     title={personalInfo.title}

@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import "./styles/App.css";
 import PersonalDetails from "./components/personal-info/PersonalDetails";
 import AddExperienceSection from "./components/experience/AddExperienceSection";
@@ -10,6 +10,7 @@ import Resume from "./components/Resume";
 import TemplateLoader from "./components/TemplateLoader";
 import Sidebar from "./components/Sidebar";
 import Customize from "./components/Customize";
+import { useReactToPrint } from 'react-to-print'
 
 function App() {
   const [personalInfo, setPersonalInfo] = useState(exampleData.personalInfo);
@@ -134,6 +135,12 @@ function App() {
   const toggleCollapsed = (e) => toggleValue(e, "isCollapsed");
   const toggleHidden = (e) => toggleValue(e, "isHidden");
 
+  const componentRef = useRef()
+  const handlePrint = useReactToPrint({
+    content: () => componentRef.current,
+    documentTitle: `${PersonalDetails.fullName}'s Resume`
+  })
+
   return (
     <>
       <Header />
@@ -156,6 +163,7 @@ function App() {
                 setSections({ educations: [], experiences: [] });
                 setPrevState(null);
               }}
+              onPrint={handlePrint}
             />
 
             {currentPage === "content" && (
@@ -204,7 +212,9 @@ function App() {
           personalInfo={personalInfo}
           sections={sections}
           layout={resumeLayout}
+          reference={componentRef}
         />
+
       </div>
     </>
 

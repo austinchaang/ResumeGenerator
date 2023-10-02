@@ -27,6 +27,7 @@ export default function FontEdit() {
                 <button
                     onClick={() => setFont("sans")}
                     data-selected={font === "sans"}
+                    id="sans-btn"
                 >
                     <span className="font-test">Aa</span>
                     Sans

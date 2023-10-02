@@ -37,7 +37,7 @@ function AddEducationSection({
                     arrayName="educations"
                 />
 
-                <CreateForm onClick={createForm} buttonText="Education" />
+                <CreateForm onClick={createForm} buttonText="Education" id="create-education" />
             </div>
         </div>
     );

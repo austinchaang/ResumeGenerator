@@ -37,7 +37,7 @@ function AddExperienceSection({
                     arrayName="experiences"
                 />
 
-                <CreateForm onClick={createForm} buttonText="Experience" />
+                <CreateForm onClick={createForm} buttonText="Experience" id="create-experience" />
             </div>
         </div>
     );

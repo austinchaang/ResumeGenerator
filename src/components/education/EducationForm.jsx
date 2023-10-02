@@ -33,7 +33,7 @@ function EducationForm(props) {
 
             <InputGroup
                 type="text"
-                id="fieldOfStudy"
+                id="field-of-study"
                 labelText="Field of Study"
                 placeholder="Enter Field Of Study"
                 value={fieldOfStudy}
@@ -46,7 +46,7 @@ function EducationForm(props) {
             <div className="dates-group">
                 <InputGroup
                     type="text"
-                    id="date"
+                    id="education-start-date"
                     labelText="Start Date"
                     placeholder="Enter Start Date"
                     value={startDate}
@@ -55,7 +55,7 @@ function EducationForm(props) {
                 />
                 <InputGroup
                     type="text"
-                    id="date"
+                    id="education-end-date"
                     labelText="End Date"
                     placeholder="Enter End Date"
                     value={endDate}
@@ -65,7 +65,7 @@ function EducationForm(props) {
             </div>
             <InputGroup
                 type="text"
-                id="location"
+                id="education-location"
                 labelText="Location"
                 placeholder="Enter Location"
                 value={location}

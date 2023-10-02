@@ -53,7 +53,7 @@ function ExperienceForm(props) {
             <div className="dates-group">
                 <InputGroup
                     type="text"
-                    id="date"
+                    id="experience-start-date"
                     labelText="Start Date"
                     placeholder="Enter Start Date"
                     value={startDate}
@@ -61,7 +61,7 @@ function ExperienceForm(props) {
                     data-key="startDate"
                 /><InputGroup
                     type="text"
-                    id="date"
+                    id="experience-end-date"
                     labelText="End Date"
                     placeholder="Enter End Date"
                     value={endDate}
@@ -71,7 +71,7 @@ function ExperienceForm(props) {
             </div>
             <InputGroup
                 type="text"
-                id="location"
+                id="experience-location"
                 labelText="Location"
                 placeholder="Enter Location"
                 value={location}

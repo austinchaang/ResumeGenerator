@@ -6,6 +6,7 @@ export default function Sidebar({ onGoToPage, page }) {
             <button
                 onClick={() => onGoToPage("content")}
                 data-selected={page === "content"}
+                id="content"
             >
                 <i className="fa-regular fa-file-lines" />
                 Content
@@ -13,6 +14,7 @@ export default function Sidebar({ onGoToPage, page }) {
             <button
                 onClick={() => onGoToPage("customize")}
                 data-selected={page === "customize"}
+                id="customize"
             >
                 <i className="fa-solid fa-pen-ruler" />
                 Customize

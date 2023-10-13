@@ -156,9 +156,11 @@ function App() {
               onClear={() => {
                 setPersonalInfo({
                   fullName: "",
+                  title: "",
                   email: "",
                   phoneNumber: "",
                   address: "",
+                  url: ""
                 });
                 setSections({ educations: [], experiences: [] });
                 setPrevState(null);
